@@ -1,0 +1,55 @@
+//Exercise 3
+//1
+var price = 3
+
+var LittleMermaid = 3
+var BrotherBear = 5
+var Hercules = 1
+
+console.log("Little Mermaid cost = $" + (LittleMermaid*price))
+console.log("Brother Bear cost = $" + (BrotherBear*price))
+console.log("Little Mermaid cost = $" + (Hercules*price))
+
+//2
+
+var GoogleRate = 400
+var AmazonRate = 380
+var FacebookRate = 350
+
+var GoogleHours = 6
+var AmazonHours = 4
+var FacebookHours = 10
+
+console.log("Weekly earnings from Google = $" + (GoogleHours*GoogleRate))
+console.log("Weekly earnings from Amazon = $" + (AmazonHours*AmazonRate))
+console.log("Weekly earnings from Facebook = $" + (FacebookHours*FacebookRate))
+
+//3
+
+var CurrentClassSize = x
+var MaxClassSize = y
+var CurrentSchedule = dayandtime2
+var ClassTime = dayandtime1{
+if(MaxClassSize>CurrentClassSize && CurrentSchedule !== ClassTime)
+    }
+
+//4
+
+var ProductOffer
+var
+
+
+
+//Exercise 4
+
+var username = 'codeup';
+var password = 'notastrongpassword';
+
+var CorrectPasswordLength = password.length >= 5
+var CorrectUsernameLength = username.length <= 20
+
+var
+
+var TrimmedPassword = password.trim()
+var TrimmedUsername = username.trim()
+
