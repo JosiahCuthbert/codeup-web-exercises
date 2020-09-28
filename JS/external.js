@@ -26,6 +26,10 @@ console.log("Little Mermaid cost = $" + (LittleMermaid*price))
 console.log("Brother Bear cost = $" + (BrotherBear*price))
 console.log("Little Mermaid cost = $" + (Hercules*price))
 
+var totalCost = ((LittleMermaid + BrotherBear + Hercules)*price)
+
+alert("the total cost is $" + totalCost.toFixed())
+
     //q2
 
 var GoogleRate = Number(prompt("what is Google's hourly rate?"))
@@ -39,6 +43,10 @@ var FacebookHours = Number(prompt("how many hours did you work at facebook this 
 console.log("Weekly earnings from Google = $" + (GoogleHours*GoogleRate))
 console.log("Weekly earnings from Amazon = $" + (AmazonHours*AmazonRate))
 console.log("Weekly earnings from Facebook = $" + (FacebookHours*FacebookRate))
+
+var weeklyIncome = ((GoogleHours*GoogleRate) + (AmazonHours*AmazonRate) + (FacebookHours*FacebookRate))
+
+alert("your weekly income is $" + weeklyIncome)
 
     //q3
 
