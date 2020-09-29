@@ -21,13 +21,15 @@ console.log("hello from conditionals lec.js!");
 //TODO Together: Write an if statement that alerts "It's raining" if isRainy is true
 //TODO Together: Write an if statement that alerts the user whether or not they have enough money to buy a new item. Assume there are no hidden fees or taxes.
 
-
+if (isAdmin) {
+    return
+}
 
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0
 //TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing"
 //TODO: Write an if statement that alerts true if numberInput is greater than but not equal to 10
 
-
+if
 
 
 //TODO: EXTRA BONUS - Refactor each of the previous statements as functions.
