@@ -63,6 +63,9 @@ console.log("hello from for_loops.js");
 // 88888888
 // 999999999
 
+for(var i = 1;i<10;i++){
+    console.log(i.toString().repeat(i));
+}
 
 
 // Create a for loop that uses console.log to create the output shown below.
