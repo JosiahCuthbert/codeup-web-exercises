@@ -1,6 +1,6 @@
 'use strict';
 
-console.log("hello from for loops");
+console.log("hello from for_loops.js");
 
 // Create a file named for_loops.js inside the js directory and link it to your loops.html file.
 //
@@ -21,13 +21,11 @@ console.log("hello from for loops");
 // 7 x 9 = 63
 // 7 x 10 = 70
 
-function showMultiplicationTable(x){
-    var i = 0
-    while(i <= 10){
-        console.log(x*i)
-        i++;
-    }
-}
+// function showMultiplicationTable(x){
+//     for(var i = 0;i<=10;i++){
+//         console.log(x*i)
+//     }
+// }
 
 // Use a for loop and the code from the previous lessons to generate 10 random numbers between
 // 20 and 200 and output to the console whether each number is odd or even. For example:
@@ -39,14 +37,11 @@ function showMultiplicationTable(x){
 // 199 is odd
 // ...
 
-var getRandom = Math.floor(Math.random() * (200 - 20) + 20)
-
-var i = 0
-
-while(i<=10){
-    console.log(getRandom + ": it is " + (getRandom % 2 == 0) + " that this number is even")
-    i++;
-}
+//
+//
+// for(var i = 0;i<=10;i++){
+//     console.log(getRandom + ": it is " + (getRandom % 2 == 0) + " that this number is even")
+// }
 
 // function isEven (x){
 //     if (x % 2 == 0);
@@ -68,7 +63,7 @@ while(i<=10){
 // 88888888
 // 999999999
 
-for
+
 
 // Create a for loop that uses console.log to create the output shown below.
 //
@@ -93,3 +88,7 @@ for
 // 15
 // 10
 // 5
+
+// for(var i = 100;i>0;i-=5){
+//     console.log(i);
+// }
