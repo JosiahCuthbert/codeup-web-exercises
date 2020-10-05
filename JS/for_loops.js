@@ -23,7 +23,7 @@ console.log("hello from for_loops.js");
 
 // function showMultiplicationTable(x){
 //     for(var i = 0;i<=10;i++){
-//         console.log(x*i)
+//         console.log(x + " x " + i + " = " + (x*i))
 //     }
 // }
 
@@ -63,9 +63,9 @@ console.log("hello from for_loops.js");
 // 88888888
 // 999999999
 
-for(var i = 1;i<10;i++){
-    console.log(i.toString().repeat(i));
-}
+// for(var i = 1;i<10;i++){
+//     console.log(i.toString().repeat(i));
+// }
 
 
 // Create a for loop that uses console.log to create the output shown below.
