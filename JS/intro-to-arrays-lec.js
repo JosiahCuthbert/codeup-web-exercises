@@ -119,3 +119,4 @@ var pies = ["apple", "cherry", "key lime", "huckleberry"];
 // TODO: Using a for each loop, iterate through the instructors array and console.log each instructor
 // TODO: Using a for each loop, iterate through the daysOfTheWeek array and console.log each day of the week
 // TODO: Using a for each loop, iterate through the favoriteFoods array and console.log each favorite food
+
