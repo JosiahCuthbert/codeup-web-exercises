@@ -55,7 +55,14 @@
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
-
+    //
+    // shoppers.forEach(function(shopper){
+    //     if(shopper.amount > 200){
+    //         console.log("shopper name: " + shopper.name + "\n price before discount: " + shopper.amount + "\n discount amount: " + shopper.amount*.12 + "\n amount after discount: " + shopper.amount*.88)
+    //     }   else{
+    //         console.log("shopper name: " + shopper.name + "\n price before discount: " + shopper.amount + "\n discount amount: 0 \n amount after discount: " + shopper.amount)
+    //     }
+    // })
 
 
     /** TODO:
@@ -70,6 +77,64 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {
+            title: "Range",
+            author: {
+                firstName: "David",
+                lastName: "Epstein",
+            }
+        },
+        {
+            title: "Flow",
+            author: {
+                firstName: "Mihaly",
+                lastName: "Csikszentmihalyi",
+            }
+        },
+        {
+            title: "The 4 Hour Work Week",
+            author: {
+                firstName: "Tim",
+                lastName: "Ferriss",
+            }
+        },
+        {
+            title: "Triggers",
+            author: {
+                firstName: "Marshall",
+                lastName: "Goldsmith",
+            }
+        },
+        {
+            title: "Deep Work",
+            author: {
+                firstName: "Cal",
+                lastName: "Newport",
+            }
+        },
+    ]
+
+    // console.log(books[0].title)
+    // console.log(books[0].author.firstName)
+    // console.log(books[0].author.lastName)
+    //
+    // console.log(books[1].title)
+    // console.log(books[1].author.firstName)
+    // console.log(books[1].author.lastName)
+    //
+    // console.log(books[2].title)
+    // console.log(books[2].author.firstName)
+    // console.log(books[2].author.lastName)
+    //
+    // console.log(books[3].title)
+    // console.log(books[3].author.firstName)
+    // console.log(books[3].author.lastName)
+    //
+    // console.log(books[4].title)
+    // console.log(books[4].author.firstName)
+    // console.log(books[4].author.lastName)
 
     /**
      * TODO:
