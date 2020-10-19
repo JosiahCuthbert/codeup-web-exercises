@@ -1,4 +1,45 @@
 .fancy-header {
-    color: purple;
+    color: black;
     text-decoration: underline;
+}
+
+#top{
+    text-align: center;
+}
+
+h1{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+body{
+    background-color: darkseagreen;
+    /*background-image: url(../Pics/green.jpg);*/
+}
+
+ul{
+    list-style: upper-latin;
+}
+
+body{
+    font-family: "American Typewriter";
+}
+
+tr, td, table, th{
+    font-size: 24px;
+    padding-top: 19px;
+    padding-right: 19px;
+}
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: navajowhite;
 }
