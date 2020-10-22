@@ -37,12 +37,17 @@ h2, h3 {
 }
 
 section {
+    display: flex;
+    /*flex-direction: row-reverse;*/
     /* enter needed declarations here */
 }
 
 section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     /* enter needed declarations here */
 }
 section:nth-of-type(1) div:last-child {
@@ -117,6 +122,7 @@ section:nth-of-type(6) {
     background: grey;
     width: 3em;
     height: 3em;
+    /*flex-direction: column-reverse;*/
 }
 
 .grey-box:nth-of-type(odd) {
