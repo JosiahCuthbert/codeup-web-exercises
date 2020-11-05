@@ -14,6 +14,14 @@
 
 //TODO: Experiment with different map styles, zoom levels, and centers. You will need to reference the mapbox docs. (~10 minutes)
 
+mapboxgl.accessToken = mapboxToken
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
+    center: [-98.4916, 29.4252], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+
 
 /**********************************************
  * 					MARKERS
@@ -65,3 +73,13 @@
 
 // TODO TOGETHER: Reverse Geocoding: Using the reverse geocoding method, enter the coordinates {lng: -98.4861, lat: 29.4260} to get a physical address for the alamo
 // TODO: Reverse geocode coordinates of your choice using the reverse geocode method
+
+geocode("1660 West T.C. Jester Blvd, Houston, Tx, 77008", mapboxToken).then(function(coordinates){
+    console.log(coordinates);
+    map.setCenter(coordinates);
+    map.setZoom(20);
+
+    new mapboxgl.Marker()
+        .setLngLat(coordinates)
+        .addTo(map);
+})
