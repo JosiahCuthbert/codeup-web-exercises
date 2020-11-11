@@ -5,14 +5,30 @@
     <title>Jquery</title>
 </head>
 <body>
+    <div class="codeup" id="start">
+        <h1 class="top">Hello There</h1>
 
-<script src="JS/jquery-2.2.4.min.js"></script>
+        <p>It's Joe</p>
+    </div>
 
+    <div class="codeup" id="content">
+        <label for="whatDidIDo">Things I did today:</label>
+        <ul id="whatDidIDo">
+            <li>go to school</li>
+            <li>sleep</li>
+            <li>eat</li>
+        </ul>
+    </div>
+
+    <script src="JS/jquery-2.2.4.min.js"></script>
     <script>
         $(document).ready(function() {
             alert( 'The DOM has finished loading!' );
         });
-    </script>
 
+        $(".top").css("color","blue");
+        $(".codeup").css("border","2px solid black");
+    </script>
+3
 </body>
 </html>
