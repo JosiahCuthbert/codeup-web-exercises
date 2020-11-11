@@ -8,6 +8,7 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<button id="h1-change-button">Change header</button>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -32,10 +33,15 @@
         // TODO: Uncomment next line and get the main header element by id
 
         var mainHeader = document.getElementById("main-header");
+        var FirstListener = function(event){
+            mainHeader.innerHTML = "Javascript is Cool!"
+        }
+
+        document.getElementById("h1-change-button").addEventListener("click", FirstListener)
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        mainHeader.innerHTML = "Javascript is Cool!"
+
 
         // TODO: Uncomment the next line and get the sub header element by id
 
