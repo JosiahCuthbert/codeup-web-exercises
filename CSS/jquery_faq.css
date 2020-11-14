@@ -1,3 +1,28 @@
 .invisible{
     visibility: hidden;
 }
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+#moonsDiv{
+    margin: 1em;
+    width: 70%;
+    border: 2px solid black;
+    padding: 1em;
+
+}
+
+#planetsDiv{
+    margin: 1em;
+    width: 30%;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+h2{
+    margin-top: 0px;
+    text-align: center;
+}
