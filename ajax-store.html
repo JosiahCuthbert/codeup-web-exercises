@@ -7,13 +7,15 @@
 
 <h1>My Tool Store</h1>
 
+<button id="refresh">Refresh</button>
+
 <table id="products">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Categories</th>
+            <th id="title">Title</th>
+            <th id="quantity">Quantity</th>
+            <th id="price">Price</th>
+            <th id="categories">Categories</th>
         </tr>
     </thead>
     <tbody id="insertProducts"></tbody>
@@ -31,7 +33,70 @@
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
 
-//    oakay
+    // console.log("hi");
+
+    function updatePage(){
+        var ajaxRequest = $.ajax("./data/inventory.json");
+
+        ajaxRequest.done(function(data, status, jqXhr){
+            console.log(data.length);
+            addToTable(data)
+        })
+
+        ajaxRequest.fail(function(jqXhr, status, error){
+            console.log(status);
+            console.log(error);
+        })
+
+        ajaxRequest.always(function(){
+            console.log("request made");
+        })
+    }
+
+    updatePage();
+
+    function tableDefault(table){
+        table.innerHTML = "<thead>\n" +
+            "        <tr>\n" +
+            "            <th id=\"title\">Title</th>\n" +
+            "            <th id=\"quantity\">Quantity</th>\n" +
+            "            <th id=\"price\">Price</th>\n" +
+            "            <th id=\"categories\">Categories</th>\n" +
+            "        </tr>\n" +
+            "    </thead>\n" +
+            "    <tbody id=\"insertProducts\"></tbody>";
+    }
+
+    function addToTable(data) {
+        var table = document.getElementById("products");
+        tableDefault(table);
+        for (var i = 0; i < data.length; i++) {
+            var row = table.insertRow(i+1)
+            var titleCell = row.insertCell(0);
+            var quantityCell = row.insertCell(1);
+            var priceCell = row.insertCell(2);
+            var categoriesCell = row.insertCell(3);
+
+
+            titleCell.innerHTML= data[i].title;
+            quantityCell.innerHTML = data[i].quantity;
+            priceCell.innerHTML = data[i].price;
+            categoriesCell.innerHTML = data[i].categories;
+        }
+    }
+
+    // window.onload = function ()
+    // {
+    //     $("#refresh").click(function(){
+    //         updatePage();
+    //     })
+    // }
+
+    $("#refresh").click(function(){
+        updatePage();
+    });
+
+
 })();
 </script>
 
