@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example jQuery Page</title>
+</head>
+<body>
+<h1 id="codeup">Hello Codeup</h1>
+
+<script src="/JS/jquery-2.2.4.min.js"></script>
+<script>
+
+        $("#codeup").hover(function () {
+            $(this).css('color', 'red');
+        }, function () {
+            $(this).css('color', 'blue');
+        }
+        );
+
+</script>
+</body>
+</html>
