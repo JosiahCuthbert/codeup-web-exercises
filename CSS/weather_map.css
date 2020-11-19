@@ -10,3 +10,12 @@ h1{
 .mapboxgl-marker{
     color: red;
 }
+
+#forecast{
+    display:flex;
+    justify-content: space-between;
+}
+
+.forecast-day{
+    background-color: blue;
+}
