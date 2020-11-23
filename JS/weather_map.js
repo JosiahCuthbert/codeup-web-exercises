@@ -52,18 +52,23 @@
             }
         }).done(function(data, status, jqXhr){
             console.log(data);
-            fiveDayForecast(data);
+
+            for(var i = 0;i<5;i++) {
+                var day = (currentDate.getDay() + i) % (daysOfTheWeek.length);
+                $(".day:eq(i)").html(daysOfTheWeek[day])
+            }
         });
     }
 
-    function fiveDayForecast(data){
-        for(var i = 0;i<5;i++){
-            var day = (currentDate.getDay() + i) % (daysOfTheWeek.length);
-            console.log(data.daily[i].weather[0].main);
-            console.log(day);
-            $(".forecast-day:eq(0)").css("background-color", "red")
-        }
-    }
+    // function fiveDayForecast(data){
+    //     for(var i = 0;i<5;i++){
+    //         var day = (currentDate.getDay() + i) % (daysOfTheWeek.length);
+    //         console.log(data.daily[i].weather[0].main);
+    //         console.log(daysOfTheWeek[day]);
+    //         // $(".forecast-day:eq(i)").css("background-color", "red")
+    //         // break;
+    //     }
+    // }
 
 
 
