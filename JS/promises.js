@@ -9,26 +9,22 @@ $("h1").click(function(){
 function retrieveUserData(username) {
     return fetch("https://api.github.com/users/" + username + "/events/public", {headers: {"Authorization": "token " + githubToken}})
         .then(res => res.json())
-        .then(console.log)
 }
 
 function lastCommit(username) {
     retrieveUserData(username)
-        .then(function(data){
-            for(var i = 0; i<10;i++)
-                if (data[i].type === "PushEvent") {
-                    console.log(data.payload.commits[0].sha);
-                    console.log(data.id);
-                    // console.log(data.payload.commits[0].sha);
+        .then(function(events){
+            events.forEach((event) => {
+                if(event.type === "PushEvent"){
+                    console.log(event.payload.commits[0].message);
+                    console.log(event.created_at);
                 }
             })
-        }
-
-function shaTimestamp(sha){
-
+        })
 }
 
 var usernameInput = prompt("Which github user would you like to view activity for?");
 
 lastCommit(usernameInput);
 
+// payload.commits[0].sha
