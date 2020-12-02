@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Blog</title>
+</head>
+<body>
+
+    <h1>Blog</h1>
+
+    <div id="posts">
+
+    </div>
+
+    <script src="JS/jquery-2.2.4.min.js"></script>
+    <script>
+        $.get("data/blog.json", {
+        }).done(function(data) {
+            makePosts(data);
+        });
+
+        const makePosts = (data) => {
+            console.log(data[0].title)
+        }
+    </script>
+</body>
+</html>
